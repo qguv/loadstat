@@ -42,6 +42,12 @@ int main(int argc, char **argv)
 
 	while ((opt = getopt(argc, argv, "crahv")) != -1) {
 		switch (opt) {
+		case 'h':
+			printf(usage, argv[0]);
+			return 0;
+		case 'v':
+			printf("%s: version %s\n", progname, version);
+			return 0;
 		case 'c':
 			show_cores = true;
 			break;
@@ -51,12 +57,6 @@ int main(int argc, char **argv)
 		case 'a':
 			show_adj = true;
 			break;
-		case 'h':
-			printf(usage, argv[0]);
-			return 0;
-		case 'v':
-			printf("%s: version %s\n", progname, version);
-			return 0;
 		default:
 			fprintf(stderr, usage, argv[0]);
 			return 2;
