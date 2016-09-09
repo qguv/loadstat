@@ -6,7 +6,7 @@
 static const char progname[] = "loadstat";
 static const char version[] = "0.1.0";
 static const char usage[] =
-	"Usage: %s [-cra] [file...]\n"
+	"Usage: %s [-crahv]\n"
 	"  -c  show number of cores\n"
 	"  -r  show raw load average\n"
 	"  -a  show load average adjusted to number of cores\n"
