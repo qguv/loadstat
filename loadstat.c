@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 static const char progname[] = "loadstat";
-static const char version[] = "0.1.0";
+static const char version[] = "0.1.1";
 static const char usage[] =
 	"Usage: %s [-crahv]\n"
 	"  -c  show number of cores\n"
